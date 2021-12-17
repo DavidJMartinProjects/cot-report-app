@@ -9,7 +9,7 @@ spring:
   datasource:
     username: sa
     password: password
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:report_db
     driverClassName: org.h2.Driver
   h2:
     console:
