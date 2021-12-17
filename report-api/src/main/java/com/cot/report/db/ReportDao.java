@@ -8,6 +8,6 @@ import java.util.List;
  * @author davidjmartin
  */
 public interface ReportDao {
-    public List<ReportDto> findBySymbol(String symbol);
-    public List<ReportDto> saveReports(List<ReportDto> reportDto);
+    List<ReportDto> findBySymbol(String symbol);
+    List<ReportDto> saveReports(List<ReportDto> reportDto);
 }
