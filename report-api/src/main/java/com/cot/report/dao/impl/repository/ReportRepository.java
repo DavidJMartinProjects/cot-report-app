@@ -1,4 +1,4 @@
-package com.cot.report.dao.db;
+package com.cot.report.dao.impl.repository;
 
 import com.cot.report.model.ReportEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
