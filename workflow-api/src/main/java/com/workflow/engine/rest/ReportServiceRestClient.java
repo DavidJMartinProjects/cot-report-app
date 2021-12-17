@@ -2,23 +2,23 @@ package com.workflow.engine.rest;
 
 import com.workflow.engine.model.ReportDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
 /**
  * @author davidjmartin
  */
-public class RestTemplateFacade {
+public class ReportServiceRestClient {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplateFacade restTemplateFacade;
 
     public void postReport(List<ReportDto> report) {
+        restTemplateFacade.postReport(report);
     }
 
     public void deleteReport() {
-
+        restTemplateFacade.deleteReport();
     }
 
 }
