@@ -36,13 +36,13 @@ public class ReportController {
 
     @PostMapping
     public ResponseEntity<String> saveReports(@RequestBody List<ReportDto> reports) {
-        log.info("POST: " + REPORT_BASE_PATH );
+        log.info("POST: " + REPORT_BASE_PATH);
         return ResponseEntity.ok(reportService.saveReports(reports));
     }
 
     @DeleteMapping
     public ResponseEntity<Void> deleteAllReports() {
-        log.info("DELETE: " + REPORT_BASE_PATH );
+        log.info("DELETE: " + REPORT_BASE_PATH);
         reportService.deleteAllReports();
         return ResponseEntity.noContent().build();
     }
