@@ -1,5 +1,6 @@
-package com.workflow.engine.rest;
+package com.workflow.engine.client;
 
+import com.workflow.engine.client.rest.RestTemplateFacade;
 import com.workflow.engine.model.ReportDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,11 +15,11 @@ public class ReportServiceRestClient {
     private RestTemplateFacade restTemplateFacade;
 
     public void postReport(List<ReportDto> report) {
-        restTemplateFacade.postReport(report);
+        restTemplateFacade.postForObject(report);
     }
 
     public void deleteReport() {
-        restTemplateFacade.deleteReport();
+        restTemplateFacade.delete();
     }
 
 }
