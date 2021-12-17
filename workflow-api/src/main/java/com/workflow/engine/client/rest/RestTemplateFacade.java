@@ -25,8 +25,8 @@ public class RestTemplateFacade {
         }
     }
 
-    // ToDo: Convert this to an exchange method and handle rest template exceptions
-    // ToDo: implement a common module for shared classes
-    // ToDo: implement a basic workflow
-
 }
+
+// ToDo: Convert this to an exchange method and handle rest template exceptions
+// ToDo: implement a common module for shared classes
+// ToDo: implement a basic workflow
