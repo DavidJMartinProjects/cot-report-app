@@ -1,4 +1,4 @@
-package com.cot.report.db;
+package com.cot.report.dao;
 
 import com.cot.report.model.ReportDto;
 

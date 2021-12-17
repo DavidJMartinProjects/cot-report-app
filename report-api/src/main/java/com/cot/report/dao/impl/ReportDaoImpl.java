@@ -1,7 +1,7 @@
-package com.cot.report.db.impl;
+package com.cot.report.dao.impl;
 
-import com.cot.report.db.ReportDao;
-import com.cot.report.db.repository.ReportRepository;
+import com.cot.report.dao.ReportDao;
+import com.cot.report.dao.db.ReportRepository;
 import com.cot.report.model.ReportDto;
 import com.cot.report.model.ReportEntity;
 import com.cot.report.model.mapper.ReportMapper;
