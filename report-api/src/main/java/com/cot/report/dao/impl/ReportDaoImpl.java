@@ -32,9 +32,15 @@ public class ReportDaoImpl implements ReportDao {
     }
 
     @Override
-    public List<ReportDto> saveReports(List<ReportDto> reportDto) {
+    public String saveReports(List<ReportDto> reportDto) {
         List<ReportEntity> reportEntities = mapper.toList(reportDto, ReportEntity.class);
-        return mapper.toList(repository.saveAll(reportEntities), ReportDto.class);
+        repository.saveAll(reportEntities);
+        return "report updated successfully.";
+    }
+
+    @Override
+    public void deleteAllReports() {
+        repository.deleteAll();
     }
 
 }

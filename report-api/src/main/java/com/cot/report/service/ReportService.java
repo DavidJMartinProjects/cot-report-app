@@ -9,5 +9,7 @@ import java.util.List;
  */
 public interface ReportService {
     List<ReportDto> getReportBySymbol(String symbol);
+    void deleteAllReports();
+    String saveReports(List<ReportDto> reports);
 }
 

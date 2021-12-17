@@ -9,5 +9,6 @@ import java.util.List;
  */
 public interface ReportDao {
     List<ReportDto> findBySymbol(String symbol);
-    List<ReportDto> saveReports(List<ReportDto> reportDto);
+    String saveReports(List<ReportDto> reportDto);
+    void deleteAllReports();
 }

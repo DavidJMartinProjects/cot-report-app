@@ -17,5 +17,5 @@ CREATE TABLE reports (
     percentage_short_change VARCHAR(250) DEFAULT NULL,
 
     net_positions VARCHAR(250) DEFAULT NULL,
-    net_positions_change VARCHAR(250) DEFAULT NULL,
+    net_positions_change VARCHAR(250) DEFAULT NULL
 );

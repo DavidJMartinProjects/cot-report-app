@@ -22,4 +22,14 @@ public class ReportServiceImpl implements ReportService {
         return reportDao.findBySymbol(symbol);
     }
 
+    @Override
+    public String saveReports(List<ReportDto> reports) {
+        return reportDao.saveReports(reports);
+    }
+
+    @Override
+    public void deleteAllReports() {
+        reportDao.deleteAllReports();
+    }
+
 }
