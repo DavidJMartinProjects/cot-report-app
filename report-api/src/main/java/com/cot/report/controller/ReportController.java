@@ -30,7 +30,7 @@ public class ReportController {
 
     @GetMapping
     public ResponseEntity<List<ReportDto>> getReportBySymbol(@RequestParam final String symbol) {
-        log.info("GET: " + REPORT_BASE_PATH + "?symbol={}", symbol);
+        log.info("GET: {}?symbol={}", REPORT_BASE_PATH, symbol);
         return ResponseEntity.ok(reportService.getReportBySymbol(symbol));
     }
 
