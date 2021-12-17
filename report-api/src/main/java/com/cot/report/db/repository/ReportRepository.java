@@ -1,4 +1,4 @@
-package com.cot.report.db;
+package com.cot.report.db.repository;
 
 import com.cot.report.model.ReportEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,8 +11,6 @@ import java.util.Collection;
  */
 @Repository
 public interface ReportRepository extends JpaRepository<ReportEntity, Long> {
-
     Collection<ReportEntity> findByInstrument(String instrument);
-
 }
 
