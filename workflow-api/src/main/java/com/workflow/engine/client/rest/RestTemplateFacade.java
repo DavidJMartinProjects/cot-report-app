@@ -1,28 +1,30 @@
 package com.workflow.engine.client.rest;
 
-import com.workflow.engine.model.ReportDto;
+import com.workflow.engine.exception.WorkflowApiException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.lang.Nullable;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.List;
 
 /**
  * @author davidjmartin
  */
 public class RestTemplateFacade {
 
-    private final static String REPORT_SERVICE_API_URL = "http://localhost:8080/reports";
-
     @Autowired
     private RestTemplate restTemplate;
 
-    public void postForObject(List<ReportDto> report) {
-        restTemplate.postForObject(REPORT_SERVICE_API_URL, report, List.class);
+    public <T> ResponseEntity<T> exchange(String url, HttpMethod method, @Nullable HttpEntity<?> requestEntity, Class<T> responseType) {
+        try {
+            return restTemplate.exchange(url, HttpMethod.POST, requestEntity, responseType);
+        } catch (RestClientException exception) {
+            throw new WorkflowApiException(exception.getMessage());
+        }
     }
 
-    public void delete() {
-        restTemplate.delete(REPORT_SERVICE_API_URL);
-    }
     // ToDo: Convert this to an exchange method and handle rest template exceptions
     // ToDo: implement a common module for shared classes
     // ToDo: implement a basic workflow
