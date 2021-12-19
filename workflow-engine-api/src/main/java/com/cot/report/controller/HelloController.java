@@ -1,6 +1,6 @@
 package com.cot.report.controller;
 
-import com.cot.report.delegate.HelloService;
+import com.cot.report.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
