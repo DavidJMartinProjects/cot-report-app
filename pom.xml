@@ -5,7 +5,7 @@
 
     <modules>
         <module>report-api</module>
-        <module>workflow-api</module>
+        <module>workflow-engine-api</module>
     </modules>
 
     <parent>

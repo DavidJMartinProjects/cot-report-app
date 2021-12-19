@@ -1,6 +1,6 @@
 package com.cot.report.service.impl;
 
-import com.cot.report.dao.ReportDao;
+import com.cot.report.db.ReportDao;
 import com.cot.report.model.ReportDto;
 import com.cot.report.service.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;

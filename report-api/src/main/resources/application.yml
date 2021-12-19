@@ -1,10 +1,7 @@
-flyway:
-  baseline-on-migrate: true
-  enabled: true
-  outputQueryResults: true
 logging:
   level:
     root: INFO
+
 spring:
   datasource:
     username: sa
@@ -16,3 +13,8 @@ spring:
       enabled: true
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+
+flyway:
+  baseline-on-migrate: true
+  enabled: true
+  outputQueryResults: true
