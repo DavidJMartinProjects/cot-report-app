@@ -5,7 +5,7 @@
       <bpmn:outgoing>Flow_0q63i4c</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="Flow_0q63i4c" sourceRef="StartEvent_1" targetRef="hello-world_1" />
-    <bpmn:serviceTask id="hello-world_1" name="HelloWorld" camunda:class="HelloWorldDelegate">
+    <bpmn:serviceTask id="hello-world_1" name="HelloWorld" camunda:class="com.cot.report.delegate.HelloWorldDelegate">
       <bpmn:incoming>Flow_0q63i4c</bpmn:incoming>
       <bpmn:outgoing>Flow_17o2x27</bpmn:outgoing>
     </bpmn:serviceTask>
