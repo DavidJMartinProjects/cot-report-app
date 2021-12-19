@@ -1,4 +1,4 @@
-package com.example.workflow.delegate;
+package com.cot.report.delegate;
 
 import org.camunda.bpm.engine.ProcessEngine;
 import org.springframework.beans.factory.annotation.Autowired;

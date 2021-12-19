@@ -1,6 +1,6 @@
-package com.example.workflow.controller;
+package com.cot.report.controller;
 
-import com.example.workflow.delegate.HelloService;
+import com.cot.report.delegate.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
